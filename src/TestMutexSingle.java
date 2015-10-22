@@ -24,10 +24,10 @@ public class TestMutexSingle {
     public static void main(String[] args) {
     	if (args.length >= 1)
     		tn = Long.valueOf(args[0]);
-    	if (isLoaded) {
-    		TestMutexSingle jni = new TestMutexSingle();
-    		jni.countThread();
-    	} else
+    	
+    	if (isLoaded)
+    		new TestMutexSingle().countThread();
+    	else
     		System.out.println("load lib error!");
     }  
   
@@ -63,6 +63,6 @@ public class TestMutexSingle {
         System.out.println("mutex(s) cost," + (System.currentTimeMillis() - time));
     }
     
-    private native void addCount();
+    private native /* synchronized */ void addCount();
     private native long getCount();
 }

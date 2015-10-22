@@ -1,14 +1,14 @@
 /****************************************************************************
  **
- ** Copyright (C) 2010-2012 UC Mobile Ltd. All Rights Reserved
- ** File        : BitmapEx.cpp
+ ** Copyright (C) 2010-2012 Anonymous Mobile Ltd. All Rights Reserved
+ ** File        : testmutex.cpp
  **
- ** Description : native implementation of Bitmap uses native memory allocation
+ ** Description : testmutex
  **
  ** Creation    : 2012/12/03
- ** Author      : lihx@ucweb.com
+ ** Author      : none@anonymous.com
  ** History     :
- **               Creation, 2012/12/03, lihx, Create the file
+ **               Creation, 2015/10/21, none, Create the file
  **
  ****************************************************************************/
 

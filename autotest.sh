@@ -28,8 +28,8 @@ do
   echo "-------------------------"
   java -cp bin TestSync 3000000
   echo "-------------------------"
-  java -cp bin -Djava.library.path=. TestMutexMulti 3000000
   java -cp bin -Djava.library.path=. TestMutexSingle 3000000
+  java -cp bin -Djava.library.path=. TestMutexMulti 3000000
   echo "-------------------------"
   
   sleep 1
