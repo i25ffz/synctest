@@ -61,6 +61,6 @@ public class TestMutexMulti {
         //pool = Executors.newFixedThreadPool(50);  
     }  
         
-    private native synchronized void addCount();
+    private native void addCount();
     private native long getCount();
 }
