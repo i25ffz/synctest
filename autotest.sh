@@ -9,7 +9,16 @@ else
   echo "usage: ./autotest.sh 10"
   exit 1
 fi
-echo "count:$c"
+
+# javac
+mkdir bin
+cd src
+javac -d ../bin *.java
+cd ..
+echo "build java ok!"
+
+./build.sh
+echo "build native ok!"
 
 echo "type,value"
 
